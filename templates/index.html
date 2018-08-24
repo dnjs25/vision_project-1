@@ -10,24 +10,24 @@
   <title>spring</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="static/css/intro.css" rel="stylesheet">
+  <link href="../static/css/intro.css" rel="stylesheet">
 
 </head>
 
 <body>
   <div id="area" style="height: 300px;"></div>
   <div>
-    <img id="logo_img" class="img_icon" src="static/img/icon.png"></img>
-    <img id="logo_img2" class="img_intro" src="static/img/spring_intro.png" alt=""></img>
+    <img id="logo_img" class="img_icon" src="../static/img/icon.png"></img>
+    <img id="logo_img2" class="img_intro" src="../static/img/spring_intro.png" alt=""></img>
   </div>
   <div>
-    <img id="logo" src="static/img/logo.png" style="margin-left: auto;margin-right: auto;display: block"></img>
+    <img id="logo" src="../static/img/logo.png" style="margin-left: auto;margin-right: auto;display: block"></img>
   </div>
 
-  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
   <script>
     jQuery(function($) {
       $("body").fadeIn('slow');
@@ -38,7 +38,7 @@
         $("#area").animate({height: '90px'});
         setTimeout(function() {
         $("body").fadeOut('fast', function(){
-          window.location = 'templates/main.html';
+          window.location = 'main.html';
         });
       }, 300);
       }, 2000);

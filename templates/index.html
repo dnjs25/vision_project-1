@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div id="area" style="height: 300px;"></div>
+  <div id="area" style="height: 200px;"></div>
   <div>
     <img id="logo_img" class="img_icon" src="../static/img/icon.png"></img>
     <img id="logo_img2" class="img_intro" src="../static/img/spring_intro.png" alt=""></img>
@@ -38,7 +38,7 @@
         $("#area").animate({height: '90px'});
         setTimeout(function() {
         $("body").fadeOut('fast', function(){
-          window.location = 'main.html';
+          window.location = '../main.html';
         });
       }, 300);
       }, 2000);

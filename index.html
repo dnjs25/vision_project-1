@@ -1,49 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="WebRTC code samples">
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
-  <meta itemprop="description" content="Client-side WebRTC code samples">
-  <meta itemprop="name" content="WebRTC code samples">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta id="theme-color" name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <title>Tuesday Vision Project</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/main.css">
+  <title>spring</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/intro.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div><h1>Tuesday Vision Project</h1></div>
-        <div><h3>Describe the image</h3></div>
-      </div>
-      <div class="panel-body">
-        <video autoplay class="hidden"></video>
-        <div><canvas class="piture--place"></canvas></div>
-        <div>
-          <button type="button" id="btn-snapshot" class="btn btn-primary pull-right">Take a picture</button>
-          <button type="button" id="btn-rec" class="btn btn-primary pull-right">
-            <i class="fa fa-microphone rec--icon"></i>
-            <span>Recognition</span>
-          </button>
-        </div>
-      </div>
-      <div class="panel-body">
-        <div class="rec-area" id="text-box"></div>
-      </div>
-      <div class="panel-footer">
-        <div id="img-desc-text"></div>
-        <div id="img-desc-accuracy"></div>
-      </div>
-    </div>
+  <div id="area" style="height: 300px;"></div>
+  <div>
+    <img id="logo_img" class="img_icon" src="static/img/icon.png"></img>
+    <img id="logo_img2" class="img_intro" src="static/img/spring_intro.png" alt=""></img>
+  </div>
+  <div>
+    <img id="logo" src="static/img/logo.png" style="margin-left: auto;margin-right: auto;display: block"></img>
   </div>
 
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="static/js/main.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script>
+    jQuery(function($) {
+      $("body").fadeIn('slow');
+        setTimeout(function() {
+        $("#logo_img").animate({height:'-=50%',width:'-=15%'});
+        $("#logo_img2").animate({height:'-=50%',width:'-=18%'});
+        $("#logo").animate({height:'+=40%',width:'+=30%'});
+        $("#area").animate({height: '90px'});
+        setTimeout(function() {
+        $("body").fadeOut('fast', function(){
+          window.location = 'templates/index.html';
+        });
+      }, 300);
+      }, 2000);
+    });
+  </script>
 </body>
+
 </html>

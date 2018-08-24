@@ -5,6 +5,10 @@
  *  that can be found in the LICENSE file in the root of the source
  *  tree.
  */
+body {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -43,10 +47,9 @@ word-break: break-word;
 }
 
 button.btn {
-  /* padding:1rem; */
+  /* padding:1rem;*/
   margin-left:1rem;
 }
-
 i.rec--icon {
 	font-size: 1.8rem;
   margin-right:0.5rem;
@@ -57,10 +60,12 @@ i.rec--icon.recording{
 }
 
 canvas.piture--place{
-  background-color: #ccc;
+  background-color: #ffffff;
   max-width: 100%;
   width: 100%;
-  margin-bottom:1rem;
+  margin-bottom:5rem;
+  border-radius: 15px;
+  border-color: #A9A9A9;
 }
 
 div.container {
@@ -127,4 +132,42 @@ video {
 }
 
 @media screen and (max-width: 450px) {
+}
+
+
+/* yewon */
+div .img_icon {
+  width: 15%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align:middle;
+  margin-top:10%;
+}
+
+div .img_intro {
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align:middle;
+  margin-bottom: 5%;
+}
+
+button {
+  background:#FFFFFF;
+  color:#474747;
+  border:none;
+  /* height:6px; */
+  font-size:1.8em;
+  cursor:pointer;
+  outline:none;
+}
+
+.sub-title {
+  margin: 1em;
+  border: solid 0.02em #A9A9A9;
+  width: 6em;
 }
